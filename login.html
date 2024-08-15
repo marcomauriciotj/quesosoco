@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login-Quesos Ocosingo</title>
+    <link href="img/logo.png" rel="icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/fondo.jpg'); 
+            background-size: 100% 150%;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-color: #ffffff;
+        }
+
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            /* Color de fondo de la tabla del login */
+            text-align: center;
+            /* Centrar cada elemento */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: center;
+            /* Centrar las cajas del formulario */
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 80%;
+            /* Ajustar el ancho de las cajas del formulario */
+            height: 30px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid hsl(0, 25%, 58%);
+            border-radius: 5px;
+        }
+
+        .form-group input[type="submit"] {
+            width: 80%;
+            /* Ajustar el ancho del botón de envío */
+            height: 40px;
+            background-color: #896c1e;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #734a18;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <h2>BIENVENIDO</h2>
+        <form action="login.php" method="post">
+            <div class="form-group">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" placeholder="Ingresar nombre de usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Ingresar password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ingresar">
+            </div>
+            <div>
+                <a class="nav-link" href="index.html">Ir a Inicio</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
